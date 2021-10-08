@@ -1,0 +1,18 @@
+version: "3.9"
+   
+services:
+  app:
+    build: .
+    volumes:
+      - .:/Dev
+      
+    ports:
+      - 8001:8001
+    image: app:Dev
+    container_name: django_backed_container1
+    command: python manage.py runserver 0.0.0.0:8001
+  
+    
+
+    
+
