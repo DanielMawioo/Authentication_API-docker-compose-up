@@ -1,5 +1,5 @@
 sudo docker-compose build
 
-sudo docker-compose run app django-admin startproject backend_API .
+sudo docker-compose run --rm web django-admin startproject backend_API .
 
 sudo docker-compose up
